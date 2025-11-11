@@ -1,0 +1,20 @@
+[package]
+name = "pdf_01"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libc = "0.2.177"
+lopdf = "0.38.0"
+rand = "0.9.2"
+ttf-parser = "0.25.1"
+
+[[bin]]
+name = "pdf_01"
+path = "src/main.rs"
+
+# path = "src/main_ttf_parser_units_per_em.rs"
+# path = "src/main_ttf_parser_glyph_index.rs"
+
+[build-dependencies]
+bindgen = "0.72.1"
