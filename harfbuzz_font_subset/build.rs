@@ -10,15 +10,15 @@ fn main() {
     println!("cargo:rustc-link-lib=harfbuzz");
     println!("cargo:rustc-link-lib=harfbuzz-subset");
 
-    // C:\PF\harfbuzz\src\[*.h, hb.h]
-    // /usr/local/include/harfbuzz/[*.h, hb.h]    
-    // C:\PF\harfbuzz\build\src\harfbuzz.lib
+    // C:\PF\harfbuzz\dist\include\harfbuzz\[*.h, hb.h]
+    // /usr/local/include/harfbuzz/[*.h, hb.h]
+    // C:\PF\harfbuzz\dist\lib\harfbuzz.lib
     // /usr/local/lib/x86_64-linux-gnu/libharfbuzz.so.0
     let (hb_include, lib_search) = if cfg!(target_os = "windows") {
         (
-            "C:/PF/harfbuzz/src/",
-            "C:/PF/harfbuzz/build/src/",
-        )        
+            "C:/PF/harfbuzz/dist/include/harfbuzz",
+            "C:/PF/harfbuzz/dist/lib/",
+        )
     } else {
         (
             "/usr/local/include/harfbuzz/",
