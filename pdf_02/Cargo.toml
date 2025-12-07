@@ -1,0 +1,23 @@
+[package]
+name = "pdf_02"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_02"
+
+path = "src/main.rs"
+
+# path = "src/main_rustybuzz.rs"
+# path = "src/main_harfbuzz_text_shape.rs"
+# path = "src/main_line_width.rs"
+# path = "src/main_text_layout.rs"
+
+[dependencies]
+lopdf = "0.38.0"
+rand = "0.9.2"
+# rustybuzz = "0.20.1"
+ttf-parser = "0.25.1"
+
+[build-dependencies]
+bindgen = "0.72.1"

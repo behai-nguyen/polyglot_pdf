@@ -32,3 +32,9 @@ I’ve used several third-party libraries to generate multilingual PDF documents
 With help from <a href="https://chatgpt.com/" title="ChatGPT" target="_blank">ChatGPT</a> and <a href="https://copilot.microsoft.com/" title="Copilot" target="_blank">Copilot</a>, we discovered that quite a bit of work is needed to get everything working. It’s not as simple as just embedding a font program in the PDF document.
 
 In this article, we’ll take an introductory look at creating a multilingual PDF document that includes both Chinese and Vietnamese text. The Rust code we’re writing runs on both Windows and Ubuntu.
+
+4. [Rust: PDFs — Basic Text Layout](https://behainguyen.wordpress.com/2025/12/07/rust-pdfs-basic-text-layout/)
+
+The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_02](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_02).
+
+In the <a href="https://behainguyen.wordpress.com/2025/11/11/rust-multilingual-pdfs-an-introductory-study/" title="Rust: Multilingual PDFs — an Introductory Study" target="_blank">last article</a> we created a two-page PDF in which each page contained only a short Chinese and a Vietnamese sentence. In this article, we look at some basic text layout: how to fit a line of text within a given page width, and how many lines can fit within a given page height. We then create a simple PDF document with more than 70 pages of <strong>only</strong> Vietnamese text, using <strong>only</strong> a single font program and font size.
