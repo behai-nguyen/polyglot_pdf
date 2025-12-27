@@ -1,0 +1,19 @@
+[package]
+name = "pdf_03_pango"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_03_pango"
+
+path = "src/main.rs"
+
+# path = "src/main_start.rs"
+# path = "src/main_fully_justified.rs"
+# path = "src/main_essay.rs"
+
+[dependencies]
+cairo-rs = { version = "0.21.5", features = ["pdf"] }
+pango-sys = "0.21.5"
+pango = "0.21.5"
+pangocairo = "0.21.5"
