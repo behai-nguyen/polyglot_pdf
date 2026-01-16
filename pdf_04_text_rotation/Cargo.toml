@@ -1,0 +1,21 @@
+[package]
+name = "pdf_04_text_rotation"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_04_text_rotation"
+
+path = "src/main.rs"
+
+# path = "src/main_01.rs"
+# path = "src/main_02.rs"
+# path = "src/main_03.rs"
+# path = "src/main_04.rs"
+# path = "src/main_05.rs"
+
+[dependencies]
+
+cairo-rs = { version = "0.21.5", features = ["pdf", "png"] }
+pango = "0.21.5"
+pangocairo = "0.21.5"
