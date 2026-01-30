@@ -54,3 +54,9 @@ At the conclusion of the <a href="https://behainguyen.wordpress.com/2025/12/07/r
 The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_04_text_rotation](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_04_text_rotation).
 
 My fascination with <a href="https://www.gtk.org/docs/architecture/pango" title="Pango Library" target="_blank"><code>Pango</code></a> and <a href="https://www.cairographics.org/" title="CairoGraphics" target="_blank"><code>CairoGraphics</code></a> has led me to explore text rotation. I find it very interesting. It becomes straightforward once we understand a few key ideas. In this article, we focus on ±90° rotation for left‑to‑right text only.
+
+8. [Rust: PDFs — Pango and Cairo Layout — Supporting Headers](https://behainguyen.wordpress.com/2026/01/30/rust-pdfs-pango-and-cairo-layout-supporting-headers/)
+
+The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_05_header](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_05_header).
+
+<strong>Headers</strong> are text rendered in larger font sizes, optionally in <strong>bold</strong>, <em>italic</em>, or <strong><em>bold italic</em></strong>. Following <code>Markdown</code>, we support  <a href="https://www.markdownguide.org/basic-syntax/#headings" title="Markdown Guide" target="_blank">six heading levels</a>: <code>#</code>..<code>######</code>. This article continues and extends the work from the <a href="https://behainguyen.wordpress.com/2025/12/27/rust-pdfs-exploring-layout-with-pango-and-cairo/" title="Rust: PDFs — Exploring Layout with Pango and Cairo" target="_blank">sixth article</a>. The final PDF produced here renders all natural headers using distinct, externally configured font settings.

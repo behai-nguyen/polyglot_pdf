@@ -1,0 +1,22 @@
+[package]
+name = "pdf_05_header"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_05_header"
+
+path = "src/main.rs"
+
+# path = "src/main_01.rs"
+# path = "src/main_02.rs"
+# path = "src/main_03.rs"
+
+[dependencies]
+cairo-rs = { version = "0.21.5", features = ["pdf"] }
+pango-sys = "0.21.5"
+pango = "0.21.5"
+pangocairo = "0.21.5"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "0.9.11"
+
