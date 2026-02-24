@@ -1,0 +1,23 @@
+[package]
+name = "pdf_06_text_styling"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_06_text_styling"
+
+# path = "src/main.rs"
+
+path = "src/main_start_01.rs"
+# path = "src/main_start_02.rs"
+
+[dependencies]
+cairo-rs = { version = "0.21.5", features = ["pdf"] }
+pango-sys = "0.21.5"
+pango = "0.21.5"
+pangocairo = "0.21.5"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "0.9.11"
+
+[dev-dependencies]
+constcat = "0.6.1"

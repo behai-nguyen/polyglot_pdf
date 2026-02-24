@@ -1,0 +1,14 @@
+[fonts]
+paragraph = { family = "Be Vietnam Pro", size = 12, weight = "normal", style = "normal" }
+
+# Headers 1, 2, 3, 4, 5, 6.
+headers = [
+    { family = "Be Vietnam Pro", size = 20, weight = "bold",   style = "italic" },
+    { family = "Be Vietnam Pro", size = 16, weight = "bold",   style = "normal" },
+    { family = "Be Vietnam Pro", size = 14, weight = "bold", style = "italic" },
+    { family = "Be Vietnam Pro", size = 15, weight = "bold",   style = "italic" },
+    { family = "Be Vietnam Pro", size = 14, weight = "normal", style = "normal" },
+    { family = "Be Vietnam Pro", size = 13, weight = "bold",   style = "normal" }
+]
+
+page_number = { family = "Be Vietnam Pro", size = 10, weight = "bold", style = "normal" }
