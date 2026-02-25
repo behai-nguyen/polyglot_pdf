@@ -16,9 +16,9 @@ After setting or resetting PKG_CONFIG_PATH, restart Visual Studio Code.
 The paths listed here reflect my headless installation; you will need to update them
 to match your own setup.
 
-The GDK4 library also uses Pango, HarfBuzz, Cairo, etc., but it ships with its own
-build. PKG_CONFIG_PATH **must** point to GDK4’s pkgconfig directory when working with
-GDK4.
+The GTK 4 library also uses Pango, HarfBuzz, Cairo, etc., but it ships with its own
+build. PKG_CONFIG_PATH **must** point to GTK 4’s pkgconfig directory when working 
+with GTK 4.
 
 When both setups exist on the same system, it is essential that PKG_CONFIG_PATH
 **always be set** to the correct library stack for the project you are working on.
