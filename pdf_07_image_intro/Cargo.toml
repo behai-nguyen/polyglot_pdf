@@ -1,0 +1,22 @@
+[package]
+name = "pdf_07_image_intro"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_07_image_intro"
+
+path = "src/main.rs"
+
+# path = "src/main_01.rs"
+# path = "src/main_02.rs"
+# path = "src/main_03.rs"
+# path = "src/main_04.rs"
+# path = "src/main_05.rs"
+# path = "src/main_06.rs"
+# path = "src/main_07.rs"
+
+[dependencies]
+cairo-rs = { version = "0.21.5", features = ["pdf", "png"] }
+pango = "0.21.5"
+pangocairo = "0.21.5"
