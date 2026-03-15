@@ -1,0 +1,17 @@
+[package]
+name = "pdf_08_image_layout"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_08_image_layout"
+
+path = "src/main.rs"
+
+[dependencies]
+cairo-rs = { version = "0.21.5", features = ["pdf", "png"] }
+pango-sys = "0.21.5"
+pango = "0.21.5"
+pangocairo = "0.21.5"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "0.9.11"

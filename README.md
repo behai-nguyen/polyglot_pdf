@@ -72,3 +72,9 @@ Implementing support for <strong>bold</strong>, <em>italic</em>, and <strong><em
 The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_07_image_intro](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_07_image_intro).
 
 Using the <a href="https://www.cairographics.org/" title="CairoGraphics" target="_blank"><code>CairoGraphics</code></a> library to render images onto PDFs. This article explores the basic image‑rendering functionalities provided by Cairo. The final objective is to incorporate image support into the <code>Markdown</code> minimum parser implemented in the <a href="https://behainguyen.wordpress.com/2026/02/23/rust-pdfs-pango-and-cairo-layout-supporting-bold-italic-and-bold-italic-text/#concluding-remarks" title="Rust: PDFs — Pango and Cairo Layout — Supporting Bold, Italic, and Bold Italic Text" target="_blank">previous article</a>.
+
+11. [Rust: PDFs — Cairo and Pango — Image Block Layout](https://behainguyen.wordpress.com/2026/03/15/rust-pdfs-cairo-and-pango-image-block-layout/)
+
+The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_08_image_layout](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_08_image_layout).
+
+An <code>image block</code> is defined as an image and its caption, treated as a single unit for layout purposes. This article focuses on developing an algorithm capable of ensuring that image blocks can be rendered properly within the available effective height, as mentioned in the closing section of the immediate <a href="https://behainguyen.wordpress.com/2026/03/06/rust-pdfs-cairo-and-pango-an-introduction-to-image-rendering/#concluding-remarks" title="Rust: PDFs — Cairo and Pango — An Introduction to Image Rendering" target="_blank">previous article</a>.
