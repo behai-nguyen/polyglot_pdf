@@ -78,3 +78,9 @@ Using the <a href="https://www.cairographics.org/" title="CairoGraphics" target=
 The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_08_image_layout](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_08_image_layout).
 
 An <code>image block</code> is defined as an image and its caption, treated as a single unit for layout purposes. This article focuses on developing an algorithm capable of ensuring that image blocks can be rendered properly within the available effective height, as mentioned in the closing section of the immediate <a href="https://behainguyen.wordpress.com/2026/03/06/rust-pdfs-cairo-and-pango-an-introduction-to-image-rendering/#concluding-remarks" title="Rust: PDFs — Cairo and Pango — An Introduction to Image Rendering" target="_blank">previous article</a>.
+
+12. [Rust: PDFs — Pango and Cairo Layout — Supporting Image Blocks](https://behainguyen.wordpress.com/2026/03/25/rust-pdfs-pango-and-cairo-layout-supporting-image-blocks/)
+
+The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_09_image_block](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_09_image_block).
+
+This article focuses on enabling the <code>Markdown</code> parser we <a href="https://behainguyen.wordpress.com/2026/02/23/rust-pdfs-pango-and-cairo-layout-supporting-bold-italic-and-bold-italic-text/#concluding-remarks" title="Rust: PDFs — Pango and Cairo Layout — Supporting Bold, Italic, and Bold Italic Text" target="_blank">last discussed</a> to support image blocks, where images are specified using relative paths. Only the basic <code>\!\[caption\]\(relative/path/to/image.png\)</code> image‑block syntax is supported.
