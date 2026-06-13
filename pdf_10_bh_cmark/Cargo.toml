@@ -1,0 +1,18 @@
+[package]
+name = "pdf_10_bh_cmark"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "pdf_10_bh_cmark"
+
+path = "src/main.rs"
+
+[dependencies]
+bh_cmark = { path = "../../bh_cmark" }
+cairo-rs = { version = "0.21.5", features = ["pdf", "png"] }
+pango-sys = "0.21.5"
+pango = "0.21.5"
+pangocairo = "0.21.5"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "0.9.11"

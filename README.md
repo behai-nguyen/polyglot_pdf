@@ -84,3 +84,9 @@ An <code>image block</code> is defined as an image and its caption, treated as a
 The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_09_image_block](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_09_image_block).
 
 This article focuses on enabling the <code>Markdown</code> parser we <a href="https://behainguyen.wordpress.com/2026/02/23/rust-pdfs-pango-and-cairo-layout-supporting-bold-italic-and-bold-italic-text/#concluding-remarks" title="Rust: PDFs — Pango and Cairo Layout — Supporting Bold, Italic, and Bold Italic Text" target="_blank">last discussed</a> to support image blocks, where images are specified using relative paths. Only the basic <code>\!\[caption\]\(relative/path/to/image.png\)</code> image‑block syntax is supported.
+
+13. [Rust: PDFs — Pango and Cairo Layout — Integrating the <code>bh_cmark</code> Parser](https://behainguyen.wordpress.com/2026/06/13/rust-pdfs-pango-and-cairo-layout-integrating-the-bh_cmark-parser/)
+
+The code for this post is in [https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_10_bh_cmark](https://github.com/behai-nguyen/polyglot_pdf/blob/main/pdf_10_bh_cmark).
+
+Replacing the two ad hoc Markdown “parsers” used in the <a href="https://behainguyen.wordpress.com/2026/03/25/rust-pdfs-pango-and-cairo-layout-supporting-image-blocks/" title="Rust: PDFs — Pango and Cairo Layout — Supporting Image Blocks" target="_blank">last post</a> with the proper, minimal, dependency‑free, CommonMark‑oriented parser described in the <a href="https://behainguyen.wordpress.com/2026/06/06/a-minimal-dependency-free-commonmark-oriented-parser-in-rust/" title="A Minimal, Dependency‑Free, CommonMark‑Oriented Parser in Rust" target="_blank"><code>bh_cmark</code></a> post. Since the new parser supports <code>thematic</code> breaks, the PDF rendering has been extended to support horizontal line drawing — a new feature implemented in this post.
